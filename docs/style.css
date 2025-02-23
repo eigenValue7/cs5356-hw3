@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #007bff; 
+    padding: 15px 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links */
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Add space between items */
+    }
+}
