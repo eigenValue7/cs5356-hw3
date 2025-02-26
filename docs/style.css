@@ -1,41 +1,157 @@
+h1, h3, p, h2, a {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color:rgb(82, 90, 140);
+  }
+
+
+header {
+    display: flex; 
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center; 
+    color: rgb(82, 90, 140);
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;    
+}
+
 .navbar {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-evenly; 
     align-items: center;
-    background-color: #007bff; 
-    padding: 15px 30px;
+   
 }
+.navbar a{
+    margin-right: 15px;
+    color:rgb(82, 90, 140);
+    text-decoration: none;
+    font-weight:500;
+}
+.navbar a:hover{
+    font-weight: bold;
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        display: none;
+    }
+    .header{
+        justify-content: center; 
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
 
 .main-content {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
+.main-content h1, h2{
+    color: white;
+}
 
-/* Background Image (Blurred) */
+
+/* I used the blur for additoinal CSS property. 
+The parameter is the radius of the blue, so bigger the value is, more blur.  */
 .background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('wolf1.jpg') no-repeat center center/cover;
+    background: url('art1.png') no-repeat center center/cover;
     filter: blur(10px); 
     z-index: -1; 
 }
 
-/* Centered Title */
 .title-container {
     position: relative;
     text-align: center;
+    max-width: 800px;
 }
 
-.title {
-    font-size: 80px;
+.title-container h1{
     color: white;
     font-weight: bold;
+}
+
+.title-container p{
+    background-color:rgb(255,255,255, 0.8);
+    font-weight: bold;
+    color: rgb(82, 90, 140);
+}
+
+
+.painting {
+    display: flex;
+    flex-flow: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.photos img{
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    object-fit:conain;
+}
+.videos {
+    display: flex; 
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 232, 224);
+}
+
+.art {
+    display: flex; 
+    flex-flow: column;
+    align-items: center;
+}
+
+.art_box{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+/* .art img{
+    margin: 10px;
+    width:300px;
+    height: auto;
+    object-fit: contain;
+} */
+
+
+@media (max-width: 1512px) {
+    .art img{
+        margin: 10px;
+        max-height:400px;
+        width: auto;
+        object-fit: contain;
+    }
+}
+@media (max-width: 400px) {
+    .art img{
+        margin: 10px;
+        width:300px;
+        height: auto;
+        object-fit: contain;
+    }
 }

@@ -1,20 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="style.css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wolf</title>
+    <title>Cat</title>
 </head>
 <body>
-    <h1>Wolf</h1>
-    <p>Wolf is the most mysterious amazing animal.</p>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#wolf">Wolf</a></li>
-            <li><a href="#hawling">Hawling</a></li>
-            <li><a href="#art_of_wold">Art</a></li>
-        </ul>
-    </nav>
-    <div></div>
+    <header>
+        <h1>Sherlock Takada</h1>
+        <nav class="navbar">
+            <a href="#MyArt">MyArt</a>
+            <a href="#Painting">Painting</a>
+            <a href="#Art">ArtFromMet</a>
+        </nav>
+    </header>
+    
+    <main class="main-content"> 
+        <div class="background"></div>
+        <div class="title-container">
+            
+            <h1>Cat, Cat, Cat.</h1>
+            <!-- <hr> -->
+            <p> My name is Nana Takada, and this is my collection of cat-inspired artwork, painted with Procreate. Under my artist name, Sherlock Takada, I capture the charm, mystery, and playfulness of cats through digital art. In addition to my original works, I’ve also curated a selection of cat-related masterpieces from the Met, celebrating the timeless connection between art and feline muses. This portfolio is a blend of personal creativity and historical inspiration—welcome to my world of cats in art!</p>
+        </div>       
+    </main>
+    <section id="MyArt" class="painting"> 
+        <!-- <h1> </h1> -->
+         <h1>Portfolio</h1>
+        <div class="photos"> 
+            <img src="art1.png">
+            <img src="art2.png">
+            <img src="art3.png">
+            <img src="art13.png">
+            <img src="art5.png">
+            <img src="art6.png">
+
+            <img src="art9.png">
+            <img src="art10.png">
+
+
+        </div>
+        <!-- I used video tag. For Video, I learned that I need to add "controls" boolean to
+        allow users to play the video. ALso, first I tried to use MOV file; however, apparently 
+        a lof of the web browsers are not compatible, my chrome did not show the MOV video. So, I converted
+        into mp4 file. Then, I specified in "type" -->
+        <div id="Painting" class="videos">
+            <h1> Video of Painting</h1>
+            <video controls width="300"><source src="paint.mp4" type="video/mp4" /></video>
+        </div>
+
+    </section>
+
+    <section id="Art" class="art"> 
+        <h1>Masterpieces from Cat lovers </h1>
+        <div id="arts" class="art_box"></div>
+        <!-- <video controls width="500"><source src="wolf_hawling.MOV" type="video/MOV" /></video> -->
+    </section>
+    <script src="script.js"></script>
+
 </body>
 </html>
+
+
