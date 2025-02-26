@@ -107,7 +107,6 @@ The parameter is the radius of the blue, so bigger the value is, more blur.  */
     padding: 10px;
     width: 300px;
     height: auto;
-    object-fit:conain;
 }
 .videos {
     display: flex; 
