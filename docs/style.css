@@ -146,15 +146,17 @@ The parameter is the radius of the blue, so bigger the value is, more blur.  */
 @media (max-width: 1512px) {
     .art img{
         margin: 10px;
-        max-height:400px;
+        max-height:500px;
+        max-width: 90vw;
         width: auto;
         object-fit: contain;
     }
 }
+
 @media (max-width: 400px) {
     .art img{
         margin: 10px;
-        width:300px;
+        max-width:300px;
         height: auto;
         object-fit: contain;
     }
